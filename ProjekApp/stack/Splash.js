@@ -1,10 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
+// import { render } from 'react-dom';
+// import Icon from 'react-native-vector-icons/FontAwesome';
 import React, {useEffect} from 'react';
-import { render } from 'react-dom';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
-
+import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native';
 import { Button } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default Splash = ({navigation}) => {
         useEffect(() => {
@@ -15,7 +14,7 @@ export default Splash = ({navigation}) => {
 
         return (
           <SafeAreaView style={styles.container}>
-            <Text>Open up App.js to start working on your app!</Text>
+            <Image source={require('../component/LogoShapes.png')}/>
             <Button
                 type='clear'
                 loading

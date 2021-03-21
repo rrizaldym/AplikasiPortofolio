@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
+// Open https://www.konsepkoding.com/2020/03/tutorial-get-detail-data-react-native.html
 
 export default Detail = () => {
   return (

@@ -14,6 +14,7 @@ import Profile from './stack/Profile'
 import Register from './stack/Register'
 import Splash from './stack/Splash'
 import Welcome from './stack/Welcome'
+// import Welcome2 from './stack/Welcome2'
 
 const Tabs = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -23,14 +24,15 @@ export default class App extends React.Component {
   render(){
     return (
         <NavigationContainer>
-          <Stack.Navigator initialRouteName='Splash' >
+          <Stack.Navigator initialRouteName='Register' >
             <Stack.Screen name='Splash' component={Splash} options={{ headerShown: false }} />
-            <Stack.Screen name='Welcome' component={Welcome} />
-            <Stack.Screen name='Register' component={Register} />
+            <Stack.Screen name='Welcome' component={Welcome} options={{ headerShown: false }} />
+            {/* <Stack.Screen name='Welcome2' component={Welcome2} options={{ headerShown: false }} /> */}
+            <Stack.Screen name='Register' component={Register} options={{ headerShown: false }} />
             <Stack.Screen name='Login' component={Login} />
-            {/* <Stack.Screen name='Splash' component={Splash} />
-            <Stack.Screen name='Splash' component={Splash} />
-            <Stack.Screen name='Splash' component={Splash} /> */}
+            <Stack.Screen name='Home' component={Home} />
+            {/* <Stack.Screen name='Detail' component={Detail} />
+            <Stack.Screen name='Profile' component={Profile} /> */}
           </Stack.Navigator>
         </NavigationContainer>
     );
